@@ -1,5 +1,0 @@
-{
-    "presets": ["env"],
-    "only": "gulpfile.babel.js",
-    "retainLines": true
-}
