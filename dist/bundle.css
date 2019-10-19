@@ -1,0 +1,50 @@
+html, body{ height: 100%; padding: 0; border: 0; margin: 0 }
+
+.photo-container {
+	display: flex; justify-content: center; align-items: center;
+	width: 80px; height: 80px; background-color: #64b5f6 }
+.photo-btn { background-color: #64b5f6 }
+.photo { width: 50px; height: 50px; border-radius: 50px }
+
+.arrow-right-container {
+	display: block;
+	width: 80px; height: 80px; background-color: #64b5f6 }
+.arrow-right-btn {background-color: #64b5f6 }
+
+.arrow-right {
+	width: 35px;
+	height: 35px;
+}
+
+.arrow-right-container:active {
+	animation: animat-arrow-right 1s infinite;
+}
+
+@keyframes animat-arrow-right
+{
+	from { width: 80px; }
+  to   { width: 800px; }
+}
+
+
+.arrow-down-container {
+	display: flex; justify-content: center; align-items: center;
+	width: 80px; height: 80px; background-color: #64b5f6 }
+.arrow-down-btn { background-color: #64b5f6 }
+.arrow-down-btn:hover { transform:rotate(7deg);
+	-ms-transform:rotate(7deg); 	/* IE 9 */
+	-moz-transform:rotate(7deg); 	/* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+	-o-transform:rotate(7deg); 	/* Opera */}
+.arrow-down { width: 35px; height: 35px; transform: rotate(0.25turn) }
+
+.arrow-down-container:active {
+	animation: animat-arrow-down 1s infinite;
+}
+
+@keyframes animat-arrow-down
+{
+	from { height: 80px; }
+  to   { height: 800px; }
+}
+

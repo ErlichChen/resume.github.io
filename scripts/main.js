@@ -17,18 +17,26 @@
 				console.log(target.className);
 				break;
 				case 'arrow-right':
-				console.log(target.className);
+
 				break;
 				case 'arrow-down':
-				console.log(target.className);
+
 				break;
 			}
+		}
 
+		function handleRightArr() {
+
+		}
+
+		function handleDownArr() {
+			console.log(target.className);
 		}
 
 
 		document.querySelector('.photo-btn').addEventListener('click', eventHandler, false);
-		document.querySelector('.arrow-right-btn').addEventListener('click', eventHandler, false);
+		var arrow_right_btn = document.querySelector('.arrow-right-btn')
+		arrow_right_btn.addEventListener('click', eventHandler, false);
 		document.querySelector('.arrow-down-btn').addEventListener('click', eventHandler, false);
 
 })(window)
